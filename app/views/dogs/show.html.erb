@@ -1,0 +1,10 @@
+<h1>This is the show page for the particular dog</h1>
+
+<h2> The name of the dog is <%= @dog.name %>. </h2>
+<h3> The breed for the dog is <%= @dog.breed %>. </h3>
+<h4> The age for the dog is <%= @dog.age %>. </h4>
+
+  <h5>All the employees that are owned by this dog</h5>
+  <% @dog.employees.each do |employee| %>
+    <li><%= employee.first_name %> <%= employee.last_name %> </li>
+  <% end %>
