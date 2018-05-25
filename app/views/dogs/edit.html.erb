@@ -1,0 +1,7 @@
+<h1>edit this dog</h1>
+
+<%= render "forms" %>
+
+<%= form_tag dog_path(@dog), method: :delete do %>
+<%= submit_tag "Delete Dog" %>
+<% end %>
